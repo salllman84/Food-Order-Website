@@ -1,0 +1,54 @@
+/* App.css or CartItem.css */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+  }
+  
+  .cart-item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-item-details h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item-details .price {
+    font-size: 1.1rem;
+    color: #e74c3c;
+  }
+  
+  .cart-item-details .quantity {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .remove-item {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-item:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  

@@ -1,0 +1,45 @@
+/* App.css or Header.css */
+
+/* You can keep this header style if you want a generic container for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* These styles are related to logo and navigation, so you can either remove or comment them */
+header .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+header nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
