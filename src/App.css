@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header Section */
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  background-color: #343a40; /* Dark gray */
   color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+/* Add this to provide a gap between the header and content */
+.header + * {
+  margin-top: 80px; /* Adjust this value as needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Logo */
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation */
+.header .nav {
+  display: flex;
+  gap: 20px; /* Creates space between navigation items */
+}
+
+.header .nav a {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.header .nav a:hover {
+  background-color: #495057; /* Slightly lighter gray */
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Design for Mobile View */
+@media (max-width: 768px) {
+  .header .nav {
+    display: none; /* Hide navigation by default */
+    flex-direction: column;
+    background-color: #343a40; /* Dark gray */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
-  to {
-    transform: rotate(360deg);
+
+  .header .nav.open {
+    display: flex; /* Show navigation when menu is open */
+  }
+
+  .header .nav a {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #495057;
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
   }
 }

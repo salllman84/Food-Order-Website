@@ -1,0 +1,61 @@
+/* .signup-container styles */
+.signup-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 40px; /* Increased space between input fields and Sign Up with Google button */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.google-button {
+    background-color: #db4437; /* Google Red */
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 40px; /* Increased space below the Google sign-up button */
+    font-size: 16px;
+}
+
+.google-button:hover {
+    background-color: #c1351d; /* Darker Google Red */
+}
+
+.done-button {
+    background-color: #4caf50; /* Green */
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.done-button:hover {
+    background-color: #45a049;
+}

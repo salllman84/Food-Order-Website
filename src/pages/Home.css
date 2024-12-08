@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section img {
+  height: auto;
+  max-height: 470px;
+}
+
+/* Featured Items */
+.featured-items {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.featured-items h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.featured-item-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.featured-item-cards .card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.featured-item-cards .card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.featured-item-cards .card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.featured-item-cards .card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Featured Categories */
+.featured-categories {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.featured-categories h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.category-cards .category-card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category-cards .category-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.category-cards .category-card h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featured-item-cards, .category-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-items h2, .featured-categories h2 {
+    font-size: 20px;
+  }
+
+  .featured-item-cards .card h3,
+  .category-cards .category-card h3 {
+    font-size: 16px;
+  }
+
+  .featured-item-cards .card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-items h2, .featured-categories h2 {
+    font-size: 18px;
+  }
+
+  .featured-item-cards .card h3,
+  .category-cards .category-card h3 {
+    font-size: 14px;
+  }
+
+  .featured-item-cards .card p {
+    font-size: 12px;
+  }
+}  
